@@ -1,0 +1,60 @@
+:root {
+  --main-color-Light: #03a9f1;
+  --main-color-Dark: #292f3f;
+}
+
+.App {
+  height: 100%;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-color: var(--background-home);
+}
+
+.t1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.t2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.t3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+.t4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+.t2-min {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.sing {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.form-group {
+  width: 48%;
+}
+.form-group > p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+.inline-group {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 885px) {
+  .t1 {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+}

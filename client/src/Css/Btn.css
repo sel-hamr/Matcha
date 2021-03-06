@@ -1,0 +1,107 @@
+.ft_btn {
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--main-color-Light);
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
+.ft_btn-2 {
+  height: 38px;
+  width: 100px;
+  border-radius: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  font-weight: 700;
+  color: var(--main-color-Light);
+  border: 1.5px solid var(--main-color-Light);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.ft_btn-3 {
+  height: 32px;
+  width: 100px;
+  border-radius: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: var(--main-color-Light);
+  font-weight: 700;
+  color: white;
+  border: 1.5px solid var(--main-color-Light);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
+.ft_btn-2:hover {
+  color: white;
+  border: none;
+}
+.ft_btn-2:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--main-color-Light);
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+.ft_btn-2:hover:after {
+  width: 100%;
+}
+
+.ft_btn:active,
+.ft_btn:focus {
+  border: 1.2px solid #03a9f1;
+  outline: none;
+  box-shadow: 0px 0px 2px 4px rgba(3, 169, 241, 0.33);
+  border: none;
+}
+.ft_btn:hover {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 2px 4px rgba(3, 169, 241, 0.33);
+  background-color: #40a8c4;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.AnimationBtn {
+  animation: jello-horizontal 1s;
+}

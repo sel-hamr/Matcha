@@ -1,0 +1,72 @@
+.DashboardBody {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-DashboardBody);
+  display: flex;
+  flex-flow: column;
+  transition: 0.5s linear;
+}
+.DashboardBodyHeader {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  transition: 2s;
+  padding: 10px;
+  color: var(--color-QuickActionsMenu);
+}
+
+.DashboardBodyHeader > div:not(.Filter) {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.DashboardBodyHeaderProfile {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.DashboardBodyHeaderProfile > span {
+  margin-left: 8px;
+  font-size: 15.5px;
+  font-weight: 600;
+}
+.DashboardBodyHeaderProfile .DashboardBodyHeaderProfileImage {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 4px;
+  overflow: hidden;
+}
+.DashboardBodyHeaderSettings {
+  width: 85px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.DashboardBodyHeaderSettings .Icons {
+  fill: var(--Icon-Fill);
+}
+
+.DashboardBodyContent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* margin-top: 20px; */
+  height: 94%;
+}
+.DashboardBody .no-image-profile {
+  font-size: 15px;
+  width: 35px;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-Nav);
+  color: var(--background-NavLink-Active);
+  border-radius: 50%;
+}

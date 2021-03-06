@@ -1,0 +1,80 @@
+.Nav {
+  width: 285px;
+  min-width: 285px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-Nav);
+  overflow: hidden;
+  transition: 0.5s linear;
+}
+.Nav * {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+.Nav .Icons {
+  fill: var(--color-NavLink-Hover);
+  transition: 0s;
+}
+.NavHide {
+  width: 0;
+  min-width: 0px;
+}
+.NavHide * {
+  opacity: 0;
+}
+.Logo {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  height: 100px;
+}
+.Logo img {
+  width: 65px;
+}
+.Menu {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.NavLink {
+  width: 165px;
+  height: 50px;
+  margin: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+}
+.NavLink span:last-child {
+  margin: 0 30px;
+}
+.Menu .NavLink:hover:not(.NavLinkActive) {
+  background-color: var(--background-NavLink-Hover);
+  color: var(--color-NavLink-Hover);
+}
+.NavLinkActive {
+  background-color: var(--background-NavLink-Active);
+  color: var(--color-NavLink-Hover);
+  font-weight: bold;
+}
+.Logout {
+  margin: 15px;
+}
+.Logout .NavLink {
+  border: 2px solid white;
+  border-radius: 6px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.Logout .NavLink:hover {
+  background-color: #fd6363;
+  border: none;
+}

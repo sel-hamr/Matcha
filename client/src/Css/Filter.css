@@ -1,0 +1,91 @@
+.Filter {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  background-color: var(--background-DashboardBody);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5px 15px;
+  transition: 0.5s linear;
+  box-sizing: border-box;
+}
+.FilterSearch {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.FilterSearchInput {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  color: var(--color-FriendInfo-firstChild);
+}
+.FilterSearchButton {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  height: 35px;
+}
+.FilterAdvanceSecond .MuiButton-containedPrimary {
+  width: 30%;
+  height: 50px;
+}
+.FilterSearchInput .MuiTextField-root {
+  width: 100%;
+}
+.FilterSearch *,
+.FilterAdvanceFirst * {
+  color: var(--color-FriendInfo-firstChild) !important;
+  border-color: var(--color-FriendInfo-firstChild) !important;
+}
+
+.FilterAdvance {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.FilterAdvanceFirst,
+.FilterAdvanceSecond {
+  flex-grow: 1;
+  min-width: 270px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.FilterAdvanceSecond {
+  align-items: center;
+  height: 100%;
+}
+.FilterAdvanceFirst > div {
+  width: 100%;
+}
+.FilterAdvanceAge,
+.FilterAdvanceRating,
+.FilterAdvanceLocation {
+  min-width: 300px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.FilterAdvanceAgeValue,
+.FilterAdvanceRatingValue,
+.FilterAdvanceLoactionValue {
+  min-width: 300px;
+}
+.FilterAdvance .MuiChip-root * {
+  color: white !important;
+}
+.Filter .MuiSlider-root{ 
+  padding: 10px 0;
+}

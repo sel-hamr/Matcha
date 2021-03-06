@@ -1,0 +1,17 @@
+.Toggle {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50px;
+  height: 24px;
+  background-color: #e5e5e5;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.ToggleSwitcher {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}

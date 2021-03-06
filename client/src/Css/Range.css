@@ -1,0 +1,40 @@
+.range {
+  display: flex;
+  align-items: center;
+}
+.range input {
+  -webkit-appearance: none;
+  width: 235px;
+  height: 6px;
+  border-radius: 7px;
+  background-color: #eef2fe;
+  outline: none;
+  transition: all 0.6s;
+}
+
+.range input::-webkit-slider-thumb {
+  position: relative;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 40%;
+  background-color: var(--main-color-Light);
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.range input::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+.range span {
+  margin-left: 14px;
+  width: 50px;
+  height: 30px;
+  background-color: var(--main-color-Light);
+  color: #fff;
+  border-radius: 22px;
+  text-align: center;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}

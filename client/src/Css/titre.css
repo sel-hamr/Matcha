@@ -1,0 +1,25 @@
+.titre {
+  width: 100%;
+}
+.titre p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 885px) {
+  .titre p {
+    font-size: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+  }
+  .titre {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+  .titre Button {
+    width: 100px;
+  }
+}

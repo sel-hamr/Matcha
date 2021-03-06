@@ -1,0 +1,196 @@
+.Users {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.User {
+  position: relative;
+  width: 90%;
+  max-width: 310px;
+  height: 380px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
+}
+.UserAfterClick > * {
+  transition: 0.3s;
+  filter: blur(3px);
+}
+.UserAfterClick .UserActions > div {
+  transform: translateY(0) !important;
+}
+.UserImageSlideButtons {
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.UserImageSlideButton {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  z-index: 3;
+  margin: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: rgb(197, 197, 197);
+}
+.UserImageSlideButtonActive {
+  background-color: rgb(109, 109, 109);
+}
+.UserImages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row;
+  transition: 1s;
+}
+.UserImages img {
+  width: 310px;
+  height: 380px;
+  filter: brightness(0.8);
+}
+.UserRating {
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+}
+.UserRating > div {
+  position: absolute;
+  top: 13px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.UserName {
+  position: absolute;
+  top: 73%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 3;
+}
+.UserAgeGenre {
+  position: absolute;
+  top: 82%;
+  color: white;
+  font-weight: bold;
+}
+.UserDistance {
+  position: absolute;
+  top: 65%;
+  color: white;
+  font-weight: bold;
+  z-index: 3;
+}
+.UserListInterest {
+  width: 90%;
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  top: 88%;
+  font-weight: bold;
+  z-index: 3;
+}
+.UserListInterestItem {
+  color: rgb(74, 128, 209);
+  margin: 2px;
+}
+.UserActions {
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  top: 8%;
+  filter: none !important;
+  z-index: 4;
+}
+.UserActions > div:not(.UserActionsRating) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2d2d2d;
+  border: 2px solid black;
+  margin: 0 5px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.UserActions .UserActionsAccept {
+  transform: translateY(-200px);
+}
+.UserActions .UserActionsReject {
+  transform: translateY(-350px);
+}
+.UserActions .UserActionsInfo {
+  transform: translateY(-500px);
+}
+.UserActions .UserActionsReport {
+  transform: translateY(-750px);
+}
+.UserActionsRating {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 200px);
+}
+.UserActionsRating .MuiRating-iconEmpty {
+  color: rgba(95, 95, 95, 0.78);
+}
+.UserAfterClick .UserActionsRating {
+  transform: translate(-50%, 0px);
+  filter: none !important;
+  z-index: 4;
+}
+
+.UsersLoader {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+}
+.UsersLoader::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 25%;
+  height: 3px;
+  background-color: #03a9f1;
+  animation: loaderAnimate 1s infinite;
+}
+.UserBackground {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.908000700280112) 0%, rgba(255, 255, 255, 0) 100%);
+  bottom: 0;
+}
+
+@keyframes loaderAnimate {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}

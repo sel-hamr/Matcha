@@ -1,0 +1,79 @@
+.Messages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow-y: auto;
+  transition: 0.5s linear;
+}
+.Messages .Icons {
+  fill: var(--Icon-Fill);
+}
+.Message {
+  width: 95%;
+  height: 80px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--background-Friend);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.5s linear;
+}
+.Message:hover {
+  background-color: var(--background-Friend-Hover);
+}
+.Message .MessageImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.MessageColumn {
+  width: 75%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.MessageRow {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.MessageNameFriend {
+  width: 120px;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: var(--color-FriendInfo-firstChild);
+}
+.MessageLastMessage {
+  width: 120px;
+  color: var(--color-FriendInfo-lastChild);
+  font-size: 13px;
+}
+.MessageDateLastMessage {
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-FriendInfo-lastChild);
+}
+.MessageCountNewMessage {
+  width: 13px;
+  height: 13px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: #6e97ee;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  margin: 0 22px;
+}

@@ -1,0 +1,76 @@
+.Dashboard {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+  background-color: #318fb5;
+}
+.Layout {
+  position: relative;
+  width: 285px;
+  min-width: 285px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  transition: 1s;
+}
+.Layout::before {
+  position: absolute;
+  content: '';
+  width: 570px;
+  height: 66px;
+  background: linear-gradient(90deg, var(--background-Nav) 50%, var(--background-QuickActions) 50%);
+}
+.LayoutSwitch {
+  position: relative;
+  width: 260px;
+  height: 36px;
+  min-height: 36px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  margin-top: 20px;
+  background-color: var(--background-DashboardBody);
+  border-radius: 6px;
+  z-index: 3;
+  transition: 1s;
+}
+.LayoutSwitchActive {
+  width: 120px;
+  height: 28px;
+  position: absolute;
+  background-color: var(--background-QuickActions);
+  border-radius: 7px;
+  transition: left 0.7s linear;
+}
+.LayoutSwitchItem {
+  width: 120px;
+  height: 28px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: darkgrey;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: smaller;
+  z-index: 3;
+}
+.LayoutSwitchItem:hover:not(.LayoutSwitchItemActive) {
+  background-color: var(--background-Friend-Hover);
+}
+.LayoutSwitchItemActive {
+  color: cornflowerblue;
+}
+.LayoutSelected {
+  position: relative;
+  display: flex;
+  height: 100%;
+  overflow-y: auto;
+}

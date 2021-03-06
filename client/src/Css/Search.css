@@ -1,0 +1,29 @@
+.Search {
+  width: 90%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  background-color: var(--background-QuickActionsMenu);
+  color: var(--color-QuickActionsMenu);
+  transition: 0.5s linear;
+}
+.Search .Icons {
+  fill: var(--Icon-Fill);
+}
+.Search input {
+  width: 90%;
+  height: 24px;
+  border: none;
+  outline: none;
+  transition: 0.5s linear;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-QuickActionsMenu);
+  color: var(--color-QuickActionsMenu);
+}
+.Search span {
+  margin: 0px 7px;
+}

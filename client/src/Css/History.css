@@ -1,0 +1,38 @@
+.MuiListItemText-multiline .MuiTypography-body1 {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: var(--color-FriendInfo-firstChild) !important;
+}
+.MuiTypography-body2 {
+  font-weight: 600 !important;
+  color: var(--color-FriendInfo-lastChild) !important;
+}
+.titerListUser {
+  width: 100%;
+  height: 50px;
+  background-color: var(--background-QuickActions);
+  border-radius: 8px;
+  margin-bottom: 11px;
+}
+.MuiInputBase-input {
+  font-size: 13px !important;
+}
+.search {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: var(--background-QuickActionsMenu);
+  transition: all 0.5s;
+}
+.colorBlack {
+  color: #404247 !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .search {
+    display: none;
+  }
+}
