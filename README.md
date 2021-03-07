@@ -25,7 +25,6 @@ My Matcha project handles:
 * Complete user profile page with gender, bio, location, interests details...
 * User profile edition (password, details, preferences)
 * Profiles discovery based on matching algorithm and user preferences
-* Popularity score calculated for each user based on interactions with other profiles
 * Real-time notifications for likes, profile views and matches
 * Real-time chat if two profiles match
 * User ability to block or report another profile
