@@ -15,7 +15,6 @@ Objective of this project is to create a complete dating website that allows use
 * JSON web tokens
 * Axios for API requests
 * Websockets (socket.io) for real-time
-* 
 ### Features
 
 My Matcha project handles:
